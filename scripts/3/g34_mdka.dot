@@ -1,0 +1,19 @@
+digraph G {
+    rankdir=LR;
+    node [shape=doublecircle]; p1;
+    node [shape=circle]; 
+
+    p0 -> p1 [label="b"];
+    p1 -> p1 [label="c"];
+
+    p1 -> p3 [label="b"];
+    p3 -> p1 [label="a"];
+
+
+    p1 -> p2 [label="a"];
+    p2 -> p4 [label="b"];
+    p4 -> p1 [label="c"];
+    p4 -> p2 [label="a"];
+    node [shape=none label=""] 0;
+    0 -> p0;
+}
