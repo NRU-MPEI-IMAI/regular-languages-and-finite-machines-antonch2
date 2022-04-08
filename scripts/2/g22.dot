@@ -1,0 +1,17 @@
+digraph G {
+  rankdir=LR;
+  node [shape=doublecircle] q3p1;
+  node [shape=circle];
+  
+  q0p0 -> q1p1 [label="a,b"];
+  q0p1 -> q1p0 [label="a,b"];
+  q1p0 -> q2p1 [label="a,b"];
+  q1p1 -> q2p0 [label="a,b"];
+  q2p0 -> q3p1 [label="a,b"];
+  q2p1 -> q3p0 [label="a,b"];  
+  q3p0 -> q3p1 [label="a,b"];
+  q3p1 -> q3p0 [label="a,b"];
+  
+  node [shape=none label=""];
+  0 -> q0p0;
+}

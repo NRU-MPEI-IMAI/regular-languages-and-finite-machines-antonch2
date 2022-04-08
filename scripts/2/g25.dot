@@ -1,0 +1,106 @@
+digraph G {
+  rankdir=LR;
+  node [shape=none, label=""]; 0;
+  node [shape=circle, label="q0p0"]; q0p0;
+  node [shape=circle, label="q0p1"]; q0p1;
+  node [shape=circle, label="q0p2"]; q0p2;
+  node [shape=circle, label="q0p3"]; q0p3;
+  node [shape=circle, label="q0p4"]; q0p4;
+  node [shape=circle, label="q0p5"]; q0p5;
+  
+  node [shape=circle, label="q1p0"]; q1p0;
+  node [shape=circle, label="q1p1"]; q1p1;
+  node [shape=circle, label="q1p2"]; q1p2;
+  node [shape=circle, label="q1p3"]; q1p3;
+  node [shape=circle, label="q1p4"]; q1p4;
+  node [shape=circle, label="q1p5"]; q1p5;
+  
+  node [shape=circle, label="q2p0"]; q2p0;
+  node [shape=circle, label="q2p1"]; q2p1;
+  node [shape=circle, label="q2p2"]; q2p2;
+  node [shape=circle, label="q2p3"]; q2p3;
+  node [shape=circle, label="q2p4"]; q2p4;
+  node [shape=circle, label="q2p5"]; q2p5;
+  
+  node [shape=circle, label="q3p0"]; q3p0;
+  node [shape=doublecircle, label="q3p1"]; q3p1;
+  node [shape=doublecircle, label="q3p2"]; q3p2;
+  node [shape=doublecircle, label="q3p3"]; q3p3;
+  node [shape=doublecircle, label="q3p4"]; q3p4;
+  node [shape=doublecircle, label="q3p5"]; q3p5;
+  
+  node [shape=circle, label="q4p0"]; q4p0;
+  node [shape=circle, label="q4p1"]; q4p1;
+  node [shape=circle, label="q4p2"]; q4p2;
+  node [shape=circle, label="q4p3"]; q4p3;
+  node [shape=circle, label="q4p4"]; q4p4;
+  node [shape=circle, label="q4p5"]; q4p5;
+  
+  q0p0 -> q1p4 [label="a"];
+  q0p0 -> q1p1 [label="b"];
+  q0p1 -> q1p5 [label="a"];
+  q0p1 -> q1p2 [label="b"];
+  q0p2 -> q1p3 [label="a"];
+  q0p2 -> q1p0 [label="b"];
+  q0p3 -> q1p2 [label="a"];
+  q0p3 -> q1p4 [label="b"];
+  q0p4 -> q1p0 [label="a"];
+  q0p4 -> q1p5 [label="b"];
+  q0p5 -> q1p1 [label="a"];
+  q0p5 -> q1p3 [label="b"];
+  
+  q1p0 -> q2p4 [label="a"];
+  q1p0 -> q2p1 [label="b"];
+  q1p1 -> q2p5 [label="a"];
+  q1p1 -> q2p2 [label="b"];
+  q1p2 -> q2p3 [label="a"];
+  q1p2 -> q2p0 [label="b"];
+  q1p3 -> q2p2 [label="a"];
+  q1p3 -> q2p4 [label="b"];
+  q1p4 -> q2p0 [label="a"];
+  q1p4 -> q2p5 [label="b"];
+  q1p5 -> q2p1 [label="a"];
+  q1p5 -> q2p3 [label="b"];
+  
+  q2p0 -> q3p4 [label="a"];
+  q2p0 -> q3p1 [label="b"];
+  q2p1 -> q3p5 [label="a"];
+  q2p1 -> q3p2 [label="b"];
+  q2p2 -> q3p3 [label="a"];
+  q2p2 -> q3p0 [label="b"];
+  q2p3 -> q3p2 [label="a"];
+  q2p3 -> q3p4 [label="b"];
+  q2p4 -> q3p0 [label="a"];
+  q2p4 -> q3p5 [label="b"];
+  q2p5 -> q3p1 [label="a"];
+  q2p5 -> q3p3 [label="b"];
+  
+  q3p0 -> q4p4 [label="a"];
+  q3p0 -> q4p1 [label="b"];
+  q3p1 -> q4p5 [label="a"];
+  q3p1 -> q4p2 [label="b"];
+  q3p2 -> q4p3 [label="a"];
+  q3p2 -> q4p0 [label="b"];
+  q3p3 -> q4p2 [label="a"];
+  q3p3 -> q4p4 [label="b"];
+  q3p4 -> q4p0 [label="a"];
+  q3p4 -> q4p5 [label="b"];
+  q3p5 -> q4p1 [label="a"];
+  q3p5 -> q4p3 [label="b"];
+  
+  q4p0 -> q3p4 [label="a"];
+  q4p0 -> q3p1 [label="b"];
+  q4p1 -> q3p5 [label="a"];
+  q4p1 -> q3p2 [label="b"];
+  q4p2 -> q3p3 [label="a"];
+  q4p2 -> q3p0 [label="b"];
+  q4p3 -> q3p2 [label="a"];
+  q4p3 -> q3p4 [label="b"];
+  q4p4 -> q3p0 [label="a"];
+  q4p4 -> q3p5 [label="b"];
+  q4p5 -> q3p1 [label="a"];
+  q4p5 -> q3p3 [label="b"];
+
+  node [shape = none, label=""]; 0;
+  0 -> q0p0 [label=""]
+}
